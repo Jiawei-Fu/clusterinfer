@@ -1,6 +1,6 @@
 #' @title Wild bootstrap improvements for inference with small cluser size (OLS)
 #'
-#' @description The function is used to get accurate and precise inference from small cluster sizes. Through  (restricted) wild clustered bootstrap-t to get p-values for OLS models, the function considerably reduces the probability of over rejection of the null hypotheses.The default distribution used to reconstruct the residuals is Rademacher. When cluster size is smaller than 12, the algorithm will suggest to use "six - point" distribution instead.
+#' @description The function is used to get accurate and precise inference from small cluster sizes. Through  (restricted) wild clustered bootstrap-t to get p-values for OLS models, the function considerably reduces the probability of over rejection of the null hypotheses.The default distribution used to reconstruct the residuals is Rademacher. When cluster size is smaller than 12, the algorithm will suggest using "six - point" distribution instead.
 #'
 #' @param model A linear model estimated using \code{lm}. If the mdoel is  nonlinear, please use \code{swboot} instead.
 #' @param cluster A formula to specify the variable of cluster.
