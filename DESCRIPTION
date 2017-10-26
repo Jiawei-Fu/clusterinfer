@@ -1,0 +1,20 @@
+Package: clusterinfer
+Type: Package
+Title: Wild bootstrap improvements for inference with small cluser size 
+Version: 0.9.1
+Authors@R: person("Jiawei", "Fu", email = "jiawei.fu@duke.edu",
+  role = c("aut", "cre"))
+Maintainer: Jiawei Fu <jiawei.fu@duke.edu>
+Contributor: Daniel Stegmueller <daniel.stegmueller@duke.edu>
+Description: The package is used to improve the statistical inference involving  small cluster sizes. Instead of calculating robust cluster variance-covariance  matirx or bootstrap-se, the functions calculating p values based on  wild bootstrap-t for OLS models and score based wild bootstrap-t for MLE models. The refined p value significantly reduces the probability of over-rejection of  the null hypothesis. 
+Depends: R (>= 3.0.1)
+License: GPL-2|GPL-3
+Encoding: UTF-8
+LazyData: true
+Imports: utils,
+    compiler,
+    sandwich,
+    zoo,
+    MASS
+RoxygenNote: 6.0.1
+
