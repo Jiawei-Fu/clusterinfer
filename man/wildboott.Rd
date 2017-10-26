@@ -23,7 +23,7 @@ wildboott(model, cluster, beta = "All", type = "Rademacher",
 \item{seed}{A single value passed to \code{set.seed}.}
 }
 \description{
-The function is used to get accurate and precise inference from small cluster sizes. Through  (restricted) wild clustered bootstrap-t to get p-values for OLS models, the function considerably reduces the probability of over rejection of the null hypotheses.The default distribution used to reconstruct the residuals is Rademacher. When cluster size is smaller than 12, the algorithm will suggest to use "six - point" distribution instead.
+The function is used to get accurate and precise inference from small cluster sizes. Through  (restricted) wild clustered bootstrap-t to get p-values for OLS models, the function considerably reduces the probability of over rejection of the null hypotheses.The default distribution used to reconstruct the residuals is Rademacher. When cluster size is smaller than 12, the algorithm will suggest using "six - point" distribution instead.
 }
 \details{
 linear model
