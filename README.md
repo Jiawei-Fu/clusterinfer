@@ -9,7 +9,7 @@ install.packages("devtools")
 devtools::install_github("Jiawei-Fu/clusterinfer")
 library(clusterinfer)
 ```
-Some of users will meet warnings about time zone, it will not affect the installation.
+Some of users will receive warnings about time zone, it will not affect the installation.
 
 There are two functions and one data set in the package now.
 
@@ -23,7 +23,7 @@ data(wv6_equ)  # input data
 wv6_equ <- as.data.frame(wv6_equ)
 model_equ <- lm(income_equ ~ income + age + gender, data = wv6_equ) # linear model
 summary(model_equ)
-wildboott(model_equ, ~country, R = 250) #find original p value is over estimated
+wildboott(model_equ, ~country, R = 250, seed = 320) #find original p value is over estimated
 ```
 The function swildboott is designed to MLE nonlinear models.
 
@@ -45,7 +45,7 @@ data(wv6_equ)  # input data
 require(MASS)
 wv6_equ <- as.data.frame(wv6_equ)
 polr_equ <- polr(factor(income_equ) ~ income + age + gender, data = wv6_equ) # polr model
-swildboott(polr_equ, ~country, R = 500) # find original p value is over estimated
+swildboott(polr_equ, ~country, R = 500, type = "mammen") # find original p value is over estimated
 ```
 
 Next version will be avaliable to more regreesion models.
