@@ -4,7 +4,7 @@ R package for statistical inference involving small cluster sizes
 The package is used to improve the statistical inference involving  small cluster sizes. Instead of calculating robust cluster variance-covariance  matirx or bootstrap-se, the functions calculating p values based on  wild bootstrap-t for OLS models and score based wild bootstrap-t for MLE models. The refined p value significantly reduces the probability of over-rejection of  the null hypothesis. 
 
 To install and use the latest version of the package, try the following codes:
-```{r}
+```r
 install.packages("devtools")
 devtools::install_github("Jiawei-Fu/clusterinfer")
 library(clusterinfer)
@@ -30,7 +30,7 @@ The function swildboott is designed to MLE nonlinear models.
 The function is used to get accurate and precise inference from small cluster sizes. Through  (restricted) wild clustered bootstrap-t to get p-values for MLE models, the function considerably reduces the probability of over rejection of the null hypotheses. The distribution used to reconstruct the residuals is Mammen or Rademacher.
 
 Examples:
-```{r}
+```r
 ##### glm model #####
 data(wv6_equ)  # input data
 # create binomial dependent variable
