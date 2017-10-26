@@ -18,7 +18,7 @@ The function wildboott is designed to OLS linear models.
 The function is used to get accurate and precise inference from small cluster sizes. Through  (restricted) wild clustered bootstrap-t to get p-values for OLS models, the function considerably reduces the probability of over rejection of the null hypotheses.The default distribution used to reconstruct the residuals is Rademacher. When cluster size is smaller than 12, the algorithm will suggest using "six - point" distribution instead.
 
 Example:
-```{r}
+```r
 data(wv6_equ)  # input data
 wv6_equ <- as.data.frame(wv6_equ)
 model_equ <- lm(income_equ ~ income + age + gender, data = wv6_equ) # linear model
