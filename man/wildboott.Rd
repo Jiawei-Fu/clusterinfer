@@ -34,7 +34,8 @@ impose H0 where H0: beta = 0
 data(wv6_equ)  # input data
 wv6_equ <- as.data.frame(wv6_equ)
 model_equ <- lm(income_equ ~ income + age + gender, data = wv6_equ) # linear model
-wildboott(wv6_equ, ~country, R = 250) # find original p value is over estimated
+summary(model_equ)
+wildboott(model_equ, ~country, R = 250) # find original p value is over estimated
 }
 
 }
