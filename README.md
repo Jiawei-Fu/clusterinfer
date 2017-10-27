@@ -49,5 +49,5 @@ swildboott(polr_equ, ~country, R = 500, type = "mammen") # find original p value
 ```
 
 Next version will be avaliable to more regreesion models.
-If you have any comments, suggestions, or findings, appreciate you to email me jiawei.fu@duke.edu
+If you have any comments, suggestions, or findings, appreciate you sending me the email to: jiawei.fu@duke.edu
 
