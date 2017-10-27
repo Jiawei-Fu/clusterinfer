@@ -25,7 +25,7 @@
 #' wv6_equ <- as.data.frame(wv6_equ)
 #' model_equ <- lm(income_equ ~ income + age + gender, data = wv6_equ) # linear model
 #' summary(model_equ)
-#' wildboott(model_equ, ~country, R = 250) # find original p value is over estimated
+#' wildboott(model_equ, ~country, R = 250) # find original p values are over estimated
 #'}
 #'
 #'@references Cameron, A. Colin, Jonah B. Gelbach, and Douglas L. Miller. 2008. "Bootstrap-Based Improvements for Inference with Clustered Errors" \emph{The Review of Economics and Statistics} 90(3): 414-427.

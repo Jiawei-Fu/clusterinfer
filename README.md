@@ -23,7 +23,7 @@ data(wv6_equ)  # input data
 wv6_equ <- as.data.frame(wv6_equ)
 model_equ <- lm(income_equ ~ income + age + gender, data = wv6_equ) # linear model
 summary(model_equ)
-wildboott(model_equ, ~country, R = 250, seed = 320) #find original p value is over estimated
+wildboott(model_equ, ~country, R = 250, seed = 320) #find original p values are over estimated
 ```
 The function swildboott is designed to MLE nonlinear models.
 
@@ -38,7 +38,7 @@ wv6_bi <- as.data.frame(wv6_equ)
 wv6_bi$income_equ0[wv6_bi$income_equ < 6] <- 0
 wv6_bi$income_equ0[wv6_bi$income_equ > 5] <- 1
 glm_equ <- glm(income_equ0 ~ income + age + gender, data = wv6_equ) # glm model
-swildboott(glm_equ, ~country, R = 500) # find original p value is over estimated
+swildboott(glm_equ, ~country, R = 500) # find original p values are over estimated
 
 ##### polr model #####
 data(wv6_equ)  # input data
