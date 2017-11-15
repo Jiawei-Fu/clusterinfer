@@ -1,6 +1,9 @@
 # clusterinfer
 R package for statistical inference involving small cluster sizes (smaller than 50)
 
+Author: Jiawei Fu
+Contributor: Daniel Stegmueller
+
 The package is used to improve the statistical inference involving  small cluster sizes. Instead of calculating robust cluster variance-covariance  matirx or bootstrap-se, the functions calculating p values based on  wild bootstrap-t for OLS models and score based wild bootstrap-t for MLE models. The refined p value significantly reduces the probability of over-rejection of  the null hypothesis. 
 
 To install and use the latest version of the package, try the following codes:
