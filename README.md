@@ -52,6 +52,6 @@ polr_equ <- polr(factor(income_equ) ~ income + age + gender, data = wv6_equ) # p
 swildboott(polr_equ, ~country, R = 500, type = "mammen") # find original p value is over estimated
 ```
 
-Next version will be avaliable to more regreesion models.
+Next version will be avaliable to more regreesion models and to deal with multi-way clustering and hybrids estimators.
 If you have any comments, suggestions, or findings, appreciate you sending me the email to: jiawei.fu@duke.edu
 
