@@ -53,5 +53,5 @@ swildboott(polr_equ, ~country, R = 500, type = "mammen") # find original p value
 ```
 
 Next version will be avaliable to multi-way clustering and hybrids estimators.
-If you have any comments, suggestions, or findings, appreciate you sending me the email: jiawei.fu@duke.edu
+If you have any comments, suggestions, or findings, appreciate sending me the email: jiawei.fu@duke.edu
 
