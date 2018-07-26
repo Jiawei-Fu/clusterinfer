@@ -83,7 +83,7 @@ wildboott <- function(model, cluster, beta = "All", type = "Rademacher", confid 
     myfun <- super  # see super vcovCL.R
 
     if (!all(class(model) == "lm"))
-        stop("wild bootstrap improvement is only avaliable to linear model. Trys scboott for nonlinear models.")
+        stop("Wild bootstrap improvement is only avaliable to linear model. Trys scboott for nonlinear models.")
 
 
 
@@ -140,7 +140,7 @@ wildboott <- function(model, cluster, beta = "All", type = "Rademacher", confid 
 
 
     # some preparation
-    restrict_df <- df
+    
     output_cont <- rep(NA, 5 * length(focus))  #put the output
 
 
@@ -155,7 +155,8 @@ wildboott <- function(model, cluster, beta = "All", type = "Rademacher", confid 
         waldsta_ori <- beta_focus/sqrt(ori_clucv[pos, pos])
 
         # get restricted estimator and residual
-
+        restrict_df <- df  #bug fix
+        
         pos1 <- which(names(restrict_df) == focus[v])
         restrict_df[pos1] <- 0  # as if beta=0
         restrict_mc <- model_use$call  #restrict model call
