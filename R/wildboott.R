@@ -24,6 +24,7 @@
 #' data(wv6_equ)  # input data
 #' wv6_equ <- as.data.frame(wv6_equ)
 #' model_equ <- lm(income_equ ~ income + age + gender, data = wv6_equ) # linear model
+#' require(lmtest)
 #' coeftest(model_equ, vcovCL(model_equ, cluster = wv6_equ$country))
 #'   see traditional results by sandwitch methods
 #' wildboott(model_equ, ~country, R = 250) # find p value is over estimated
