@@ -42,8 +42,6 @@
 #'@import lmtest
 #'@import stats
 #'
-#'
-#'
 #'@export
 
 wildboott <- function(model, cluster, beta = "All", type = "Rademacher", confid = 0.05, R = 200, seed = NULL) {
@@ -136,11 +134,8 @@ wildboott <- function(model, cluster, beta = "All", type = "Rademacher", confid 
     boot_call$formula <- update.formula(formula(model_use), y_boot ~ .)
     estimator <- cmpfun(eval(model_use$call[[1]]))  #cmpfun!!!!!!!!
 
-
-
-
     # some preparation
-    
+
     output_cont <- rep(NA, 5 * length(focus))  #put the output
 
 
@@ -156,7 +151,7 @@ wildboott <- function(model, cluster, beta = "All", type = "Rademacher", confid 
 
         # get restricted estimator and residual
         restrict_df <- df  #bug fix
-        
+
         pos1 <- which(names(restrict_df) == focus[v])
         restrict_df[pos1] <- 0  # as if beta=0
         restrict_mc <- model_use$call  #restrict model call
