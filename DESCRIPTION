@@ -1,7 +1,7 @@
 Package: clusterinfer
 Type: Package
 Title: Wild bootstrap improvements for inference with small cluser size 
-Version: 0.9.1
+Version: 0.9.2
 Authors@R: person("Jiawei", "Fu", email = "jiawei.fu@duke.edu",
   role = c("aut", "cre"))
 Maintainer: Jiawei Fu <jiawei.fu@duke.edu>
