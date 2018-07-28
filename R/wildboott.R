@@ -26,7 +26,7 @@
 #' model_equ <- lm(income_equ ~ income + age + gender, data = wv6_equ) # linear model
 #' coeftest(model_equ, vcovCL(model_equ, cluster = wv6_equ$country))
 #'   see traditional results by sandwitch methods
-#' wildboott(wv6_equ, ~country, R = 250) # find p value is over estimated
+#' wildboott(model_equ, ~country, R = 250) # find p value is over estimated
 #'}
 #'
 #'@references Cameron, A. Colin, Jonah B. Gelbach, and Douglas L. Miller. 2008. "Bootstrap-Based Improvements for Inference with Clustered Errors" \emph{The Review of Economics and Statistics} 90(3): 414-427.
