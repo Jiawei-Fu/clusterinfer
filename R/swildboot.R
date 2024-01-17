@@ -5,9 +5,9 @@
 #' @param model A nonlinear model (glm,polr) estimated using \code{lm}. If the mdoel is estimated by OLS, please use \code{wboot} instead.
 #' @param cluster A formula to specify the variable of cluster.
 #' @param beta A key variable of interest. To denote the key varibale to focus on, one could save a amount of time because the algorithm will only report the outcome of key variable. The defalt value is "All" which will report all the results of every coefficents.
-#' @param type The type of distributions for wild boostrap. Default value is Mammen. One could also use Rademacher though the Mammen distribution seems to do much better than Rademacher for small cluster size.
+#' @param type The type of distributions for wild bootstrap. Default value is Mammen. One could also use Rademacher though the Mammen distribution seems to do much better than Rademacher for small cluster size.
 #' @param confid The size of test
-#' @param R The number of boostrap replicates. The default number is 400.
+#' @param R The number of bootstrap replicates. The default number is 400.
 #' @param seed A single value passed to \code{set.seed}.
 #'
 #' @author Jiawei Fu \email{jiawei.fu@duke.edu}
